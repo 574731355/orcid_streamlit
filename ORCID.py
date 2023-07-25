@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import requests
 
-appid = streamlit.secrets["appid"]
-client_secret = streamlit.secrets["client_secret"]
+appid = st.secrets["appid"]
+client_secret = st.secrets["client_secret"]
 
 
 def get_token(appid, client_secret):
